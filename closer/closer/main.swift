@@ -163,3 +163,12 @@ result = calculate(a: 10, b: 10, method: { (left: Int, right: Int) -> Int in
 result = calculate(a: 10, b: 10) { $0 + $1 }
 
 print(result) // 20
+
+// 사용자 입력받기
+print("입력해주세요 : ")
+let input: String? = readLine()
+if let input = input {
+    print("입력값은 \(input)입니다.")
+}
+
+
